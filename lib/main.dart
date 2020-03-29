@@ -1,6 +1,8 @@
 import 'package:feathers/login_flow/login_view.dart';
 import 'package:flutter/material.dart';
 
+import 'camera_flow/camera_view.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
       ),
-      home: LoginView(),
+      home: cameraView(),
     );
   }
 }
