@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         accentColor: _colors.mainYellow,
         canvasColor: Colors.transparent
       ),
-      home: LoginView(),
+      home: MapView(),
     );
   }
 }

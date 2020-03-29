@@ -15,6 +15,7 @@ dependencies:
   cloud_firestore:
   google_maps_flutter:
   location: ^3.0.0
+  flare_flutter:
 
   cupertino_icons: ^0.1.3
 
@@ -44,6 +45,10 @@ flutter:
     - assets/mapview_assets/tree.png
     - assets/mapview_assets/user.png
     - assets/mapview_assets/wing.png
+    - assets/login_assets/flower_gif.gif
+    - assets/login_assets/back.png
+    - assets/login_assets/play.flr
+    - assets/login_assets/bird.gif
 #    - assets/login_assets/button_border.png
 #    - assets/login_assets/Breathing_button.gif
 #    - assets/login_assets/flower_gif.gif
