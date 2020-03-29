@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "700589827415",
+    "firebase_url": "https://feathers-c16a4.firebaseio.com",
+    "project_id": "feathers-c16a4",
+    "storage_bucket": "feathers-c16a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700589827415:android:afa83cf0b64353b205ca12",
+        "android_client_info": {
+          "package_name": "findjoy.dev.feathers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700589827415-fr5n0nh1tb957oedanj7pprsnrn2kbqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "findjoy.dev.feathers",
+            "certificate_hash": "caf1a63260fb3633d8cf387a3789172aedd89c94"
+          }
+        },
+        {
+          "client_id": "700589827415-7ch6hm0210bg6qhk9r993ipntts3h3pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgZPn-jshjs2zU3zPQWfhnhB6YVEao5Eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700589827415-7ch6hm0210bg6qhk9r993ipntts3h3pl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "700589827415-l0cd74j8kgj8895cvfsoeb052i7tidsc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "devfeathers.findjoy.feathers"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
