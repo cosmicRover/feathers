@@ -56,7 +56,7 @@ class _MapViewState extends State<MapView> {
           child: FittedBox(
             child: FloatingActionButton(
               child: Icon(
-                Icons.add,
+                Icons.arrow_upward,
                 size: 26.0,
                 color: _colors.menuBlue,
               ),
@@ -80,10 +80,110 @@ class _MapViewState extends State<MapView> {
         builder: (BuildContext context) {
           return Container(
             color: Colors.transparent,
-            height: 400.0,
+            height: 300.0,
             child: Stack(
-              
+              children: <Widget>[
+                Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Container(
+                    height: 200.0,
+                    color: _colors.menuBlue,
+                    child: Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(top: 34.0, left: 39.0),
+                          child: Row(
+                            children: <Widget>[
+                              Image.asset(
+                                "assets/mapview_assets/pin.png",
+                                height: 20.0,
+                                width: 20.0,
+                              ),
+                              SizedBox(
+                                width: 12.0,
+                              ),
+                              Text(
+                                "Map",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 18.0),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 17.0, left: 39.0),
+                          child: Row(
+                            children: <Widget>[
+                              Image.asset(
+                                "assets/mapview_assets/user.png",
+                                height: 20.0,
+                                width: 20.0,
+                              ),
+                              SizedBox(
+                                width: 12.0,
+                              ),
+                              Text(
+                                "Camera",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 18.0),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 17.0, left: 39.0),
+                          child: Row(
+                            children: <Widget>[
+                              Image.asset(
+                                "assets/mapview_assets/tree.png",
+                                height: 20.0,
+                                width: 20.0,
+                              ),
+                              SizedBox(
+                                width: 12.0,
+                              ),
+                              Text(
+                                "Your Timeline",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 18.0),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 17.0, left: 39.0),
+                          child: Row(
+                            children: <Widget>[
+                              Image.asset(
+                                "assets/mapview_assets/wing.png",
+                                height: 20.0,
+                                width: 20.0,
+                              ),
+                              SizedBox(
+                                width: 12.0,
+                              ),
+                              Text(
+                                "Protect the Birds",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 18.0),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.bottomRight,
+                  child: Image.asset("assets/mapview_assets/wing.png"),
+                )
+              ],
             ),
+//            decoration: BoxDecoration(
+//                color: Colors.blueGrey,
+//                borderRadius: BorderRadius.all(Radius.circular(28.0))
+//            ),
           );
         });
   }
@@ -101,26 +201,20 @@ class _MapViewState extends State<MapView> {
   Widget searchBox() {
     return Container(
       decoration: BoxDecoration(
-        boxShadow: [
-          const BoxShadow(
-            color: Colors.grey,
-            blurRadius: 10.0
-          )
-        ],
-        color: _colors.searchBoxGray,
+          boxShadow: [const BoxShadow(color: Colors.grey, blurRadius: 10.0)],
+          color: _colors.searchBoxGray,
           borderRadius: new BorderRadius.all(
             const Radius.circular(8.0),
-          )
-      ),
+          )),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(left:15.0),
+            padding: const EdgeInsets.only(left: 15.0),
             child: Text("Search birds..."),
           ),
           Padding(
-            padding: const EdgeInsets.only(right:18.0),
+            padding: const EdgeInsets.only(right: 18.0),
             child: Image.asset("assets/mapview_assets/search.png"),
           )
         ],

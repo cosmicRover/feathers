@@ -39,6 +39,11 @@ flutter:
     - assets/mapview_assets/bottom.png
     - assets/mapview_assets/search.png
     - assets/mapview_assets/menu.png
+    - assets/mapview_assets/wing.png
+    - assets/mapview_assets/pin.png
+    - assets/mapview_assets/tree.png
+    - assets/mapview_assets/user.png
+    - assets/mapview_assets/wing.png
 #    - assets/login_assets/button_border.png
 #    - assets/login_assets/Breathing_button.gif
 #    - assets/login_assets/flower_gif.gif
