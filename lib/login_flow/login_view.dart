@@ -7,15 +7,17 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: Color(0xFFF8F3F5),
       child: ListView(
         children: <Widget>[
           Stack(
             children: <Widget>[
-              Placeholder(),
+              
+
+              //Placeholder(),
               Align(
-                alignment: Alignment.center,
-                child: Text("graphics goes here"),
+                //alignment: Alignment.center,
+                child: Image.asset("assets/login_assets/right_feather_shadow.png", alignment: Alignment.topRight,),
               )
             ],
           ),
@@ -24,7 +26,7 @@ class LoginView extends StatelessWidget {
           ),
           FlatButton(
             onPressed: () => _viewModel.initLoginFlow,
-            child: Text("Sign in with google logo"),
+            child: Text("Sign in with google logo", style: TextStyle(fontFamily: 'Gibson', fontSize: 30), ),
           )
         ],
       ),
