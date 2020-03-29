@@ -9,7 +9,7 @@ class _ProvileViewState extends State<ProvileView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
