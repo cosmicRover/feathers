@@ -16,6 +16,7 @@ dependencies:
   google_maps_flutter:
   location: ^3.0.0
   flare_flutter:
+  image_picker:
 
   cupertino_icons: ^0.1.3
 
@@ -49,6 +50,8 @@ flutter:
     - assets/login_assets/back.png
     - assets/login_assets/play.flr
     - assets/login_assets/bird.gif
+    - assets/cameraView_assets/play.flr
+    - assets/cameraView_assets/cameraBack.png
 #    - assets/login_assets/button_border.png
 #    - assets/login_assets/Breathing_button.gif
 #    - assets/login_assets/flower_gif.gif
