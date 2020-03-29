@@ -1,6 +1,7 @@
 import 'package:feathers/app_constants/app_colors.dart';
 import 'package:feathers/login_flow/login_view.dart';
 import 'package:feathers/map_flow/map_view.dart';
+import 'package:feathers/profile_flow/profile_view.dart';
 import 'package:flutter/material.dart';
 
 import 'camera_flow/camera_view.dart';
@@ -18,9 +19,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         accentColor: _colors.mainYellow,
-        canvasColor: Colors.transparent
+        canvasColor: Colors.transparent,
+        fontFamily: 'Gibson'
       ),
-      home: cameraView(),
+      home: ProfileView(),
     );
   }
 }
