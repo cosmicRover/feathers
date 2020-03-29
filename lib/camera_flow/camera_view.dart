@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 class cameraView extends StatefulWidget {
   @override
@@ -20,30 +21,38 @@ class _cameraViewState extends State<cameraView> {
                     )
                   ),
                 ),
-Column(
-  mainAxisAlignment: MainAxisAlignment.start,
-  children: <Widget>[
-    Expanded(
-      flex: 2, 
-      child: Container(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                CircleAvatar(
-                  radius: 60,
-                  //child: IconButton(Icons.camera_enhance,color: Color(0xFF020D53),),
-                  backgroundColor: Color(0xFFF1D137),
-                  backgroundImage: AssetImage('assets/cameraView_assets/camIcon.png'), 
-                  ) ,
-              ],
+                Align(
+            alignment: Alignment(0,0.35),
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: GestureDetector(
+                child: flrButton(),
+                onTap: () => print("hello"),
+              ),
+            ),
+          ),
 
-      ),),
-    )
-  ],
-)
 
         ],
       ),
     );
   }
 }
+
+ Widget flrButton() {
+    return Container(
+      height: 130.0,
+      child: Stack(
+        children: <Widget>[
+          
+          FlareActor(
+            "assets/cameraView_assets/play.flr",
+            fit: BoxFit.contain,
+            animation: "stand_by",
+            color: Color(0xFFF1D137)
+          ),
+          Center(child: Icon(Icons.camera_alt, size: 40, color: Color(0xFF020D53),),),
+        ],
+      ),
+    );
+  }
