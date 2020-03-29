@@ -6,30 +6,41 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Color(0xFFF8F3F5),
-      child: ListView(
-        children: <Widget>[
-          Stack(
-            children: <Widget>[
-              
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
 
-              //Placeholder(),
-              Align(
-                //alignment: Alignment.center,
-                child: Image.asset("assets/login_assets/right_feather_shadow.png", alignment: Alignment.topRight,),
+    return Scaffold(
+      body: Stack(
+        children: <Widget>[
+          Align(
+              // left: 70,
+              // height: height/2,
+              alignment: Alignment.topRight,
+              child: Container(
+                height: height/2,
+                width: width/2,
+                child: Image.asset(
+                  'assets/login_assets/right_feather_shadow.png',
+                  fit: BoxFit.fitWidth,
+                ),
               )
-            ],
-          ),
-          SizedBox(
-            height: 30.0,
-          ),
-          FlatButton(
-            onPressed: () => _viewModel.initLoginFlow,
-            child: Text("Sign in with google logo", style: TextStyle(fontFamily: 'Gibson', fontSize: 30), ),
-          )
+              
+              ),
+          Align(
+              // right: 200,
+              // top: 300,
+
+              // height: height/1.5,
+              alignment: Alignment.bottomLeft,
+              child: Image.asset('assets/login_assets/left_feather.png',
+                  fit: BoxFit.fitWidth))
         ],
       ),
     );
   }
 }
+
+// FlatButton(
+//   onPressed: () => _viewModel.initLoginFlow,
+//   child: Text("Sign in with google logo", style: TextStyle(fontFamily: 'Gibson', fontSize: 30), ),
+// )
