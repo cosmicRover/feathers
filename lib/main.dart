@@ -1,4 +1,5 @@
 import 'package:feathers/app_constants/app_colors.dart';
+import 'package:feathers/details_flow/details_view.dart';
 import 'package:feathers/login_flow/login_view.dart';
 import 'package:feathers/map_flow/map_view.dart';
 import 'package:feathers/profile_flow/profile_view.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         canvasColor: Colors.transparent,
         fontFamily: 'Gibson'
       ),
-      home: ProfileView(),
+      home: detailsView(),
     );
   }
 }
