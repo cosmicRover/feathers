@@ -54,6 +54,8 @@ flutter:
     - assets/cameraView_assets/play.flr
     - assets/cameraView_assets/cameraBack.png
     - assets/profileview_assets/tree_back.png
+    - assets/profileview_assets/tag.png
+    - assets/profileview_assets/badge.png
 #    - assets/login_assets/button_border.png
 #    - assets/login_assets/Breathing_button.gif
 #    - assets/login_assets/flower_gif.gif

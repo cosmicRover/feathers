@@ -1,4 +1,6 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:feathers/app_constants/app_colors.dart';
+import 'package:feathers/profile_flow/profile_view_model.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +14,10 @@ class _ProfileViewState extends State<ProfileView> {
 
   @override
   Widget build(BuildContext context) {
+    final _viewModel = ProfileViewViewModel();
     final _width = MediaQuery.of(context).size.width;
     final _height = MediaQuery.of(context).size.height;
-    int current = 0;
+    var current = 0;
 
     return Scaffold(
       backgroundColor: _colors.profileBlue,
@@ -23,6 +26,24 @@ class _ProfileViewState extends State<ProfileView> {
           Expanded(
             child: ListView(
               children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(top:50.0, left:30.0),
+                  child: Text(
+                    "Hello Haily!",
+                    style: TextStyle(
+                        fontSize: 34.0,
+                        color: Colors.white),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top:20.0, left:30.0),
+                  child: Text(
+                    "This is your timeline",
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.white),
+                  ),
+                ),
                 Stack(
                   children: <Widget>[
                     Padding(
@@ -34,9 +55,9 @@ class _ProfileViewState extends State<ProfileView> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 190.0),
+                      padding: const EdgeInsets.only(top: 240.0),
                       child: Container(
-                        height: 200.0,
+                        height: 180.0,
                         child: Stack(
                           children: <Widget>[
                             FlareActor(
@@ -66,18 +87,88 @@ class _ProfileViewState extends State<ProfileView> {
                                     )
                                   ],
                                 )),
-                            Container(
-                              child: Stack(
-                                children: <Widget>[
-                                  
-                                ],
-                              ),
-                            )
                           ],
                         ),
                       ),
                     ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 450.0),
+                      child: Container(
+                          child: Column(
+                        children: <Widget>[
+                          CarouselSlider(
+                              enableInfiniteScroll: true,
+                              enlargeCenterPage: true,
+                              height: 170.0,
+                              aspectRatio: 2.0,
+                              viewportFraction: 0.8,
+                              initialPage: 0,
+                              onPageChanged: (index) {
+                                setState(() {
+                                  current = index;
+                                });
+                              },
+                              items: _viewModel.imageList.map((e) {
+                                return Builder(
+                                  builder: (BuildContext context) {
+                                    return Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(20.0)),
+                                        child: Stack(
+                                          children: <Widget>[
+                                            Image.network(e, fit: BoxFit.fill),
+                                            Align(
+                                              alignment: Alignment.bottomLeft,
+                                              child: Image.asset(
+                                                "assets/profileview_assets/tag.png",
+                                                height: 60.0,
+                                                width: 230.0,
+                                                fit: BoxFit.fill,
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  bottom: 16.0, left: 16.0),
+                                              child: Align(
+                                                alignment: Alignment.bottomLeft,
+                                                child: Text(
+                                                  "Blue Jay",
+                                                  style: TextStyle(
+                                                      fontSize: 18.0,
+                                                      color: Colors.white),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ));
+                                  },
+                                );
+                              }).toList())
+                        ],
+                      )),
+                    )
                   ],
+                ),
+                Row(
+                  children: <Widget>[
+                    Container(
+                      width: _width,
+                      child: Image.asset(
+                        "assets/profileview_assets/badge.png",
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ],
+                ),
+                Center(
+                  child: Text(
+                    "Badges Earned",
+                    style: TextStyle(fontSize: 18.0, color: Colors.white),
+                  ),
+                ),
+                SizedBox(
+                  height: 120.0,
                 ),
               ],
             ),
