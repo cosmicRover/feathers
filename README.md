@@ -19,11 +19,11 @@ A cross platform mobile application that allows smartphone users to identify, tr
 ##### :heavy_check_mark: Users can view a timeline of all the bird species they have identified on their profile
  App powered by: Flutter (https://flutter.dev) (:zap:)
 
-##### UI
+# UI
 [UI](https://imgur.com/7UVJOER)
 
 
-##### DEMO
+#DEMO
 
 [Video Walkthrough](https://i.imgur.com/2dq1kGb.gifv)
 
