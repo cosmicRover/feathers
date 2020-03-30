@@ -24,7 +24,7 @@ A cross platform mobile application that allows smartphone users to identify, tr
 
 
 ##### DEMO
-<img src='https://imgur.com/a/vNTZMhP' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<vid src='https://imgur.com/a/vNTZMhP' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
