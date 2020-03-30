@@ -57,6 +57,11 @@ flutter:
     - assets/profileview_assets/tag.png
     - assets/profileview_assets/badge.png
     - assets/cameraView_assets/blue.jpg
+    - assets/mapview_assets/pin1.png
+    - assets/mapview_assets/pin2.png
+    - assets/mapview_assets/pin3.png
+    - assets/mapview_assets/pin4.png
+    - assets/mapview_assets/pin5.png
 #    - assets/login_assets/button_border.png
 #    - assets/login_assets/Breathing_button.gif
 #    - assets/login_assets/flower_gif.gif

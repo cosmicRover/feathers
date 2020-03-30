@@ -1,5 +1,7 @@
 import 'package:feathers/app_constants/app_colors.dart';
+import 'package:feathers/camera_flow/camera_view.dart';
 import 'package:feathers/map_flow/map_view_model.dart';
+import 'package:feathers/profile_flow/profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'dart:async';
@@ -92,62 +94,83 @@ class _MapViewState extends State<MapView> {
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.only(top: 34.0, left: 39.0),
-                          child: Row(
-                            children: <Widget>[
-                              Image.asset(
-                                "assets/mapview_assets/pin.png",
-                                height: 20.0,
-                                width: 20.0,
-                              ),
-                              SizedBox(
-                                width: 12.0,
-                              ),
-                              Text(
-                                "Map",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 18.0),
-                              )
-                            ],
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.pop(context);
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Image.asset(
+                                  "assets/mapview_assets/pin.png",
+                                  height: 20.0,
+                                  width: 20.0,
+                                ),
+                                SizedBox(
+                                  width: 12.0,
+                                ),
+                                Text(
+                                  "Map",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 18.0),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 17.0, left: 39.0),
-                          child: Row(
-                            children: <Widget>[
-                              Image.asset(
-                                "assets/mapview_assets/user.png",
-                                height: 20.0,
-                                width: 20.0,
-                              ),
-                              SizedBox(
-                                width: 12.0,
-                              ),
-                              Text(
-                                "Camera",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 18.0),
-                              )
-                            ],
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => cameraView()));
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Image.asset(
+                                  "assets/mapview_assets/user.png",
+                                  height: 20.0,
+                                  width: 20.0,
+                                ),
+                                SizedBox(
+                                  width: 12.0,
+                                ),
+                                Text(
+                                  "Camera",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 18.0),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 17.0, left: 39.0),
-                          child: Row(
-                            children: <Widget>[
-                              Image.asset(
-                                "assets/mapview_assets/tree.png",
-                                height: 20.0,
-                                width: 20.0,
-                              ),
-                              SizedBox(
-                                width: 12.0,
-                              ),
-                              Text(
-                                "Your Timeline",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 18.0),
-                              )
-                            ],
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ProfileView()));
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Image.asset(
+                                  "assets/mapview_assets/tree.png",
+                                  height: 20.0,
+                                  width: 20.0,
+                                ),
+                                SizedBox(
+                                  width: 12.0,
+                                ),
+                                Text(
+                                  "Your Timeline",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 18.0),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Padding(
@@ -195,6 +218,7 @@ class _MapViewState extends State<MapView> {
       onMapCreated: (GoogleMapController controller) {
         _controller.complete(controller);
       },
+      markers: Set.from(_viewModel.birdMarkers),
     );
   }
 

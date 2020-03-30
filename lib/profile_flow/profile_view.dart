@@ -204,7 +204,7 @@ class _ProfileViewState extends State<ProfileView> {
                 color: _colors.menuBlue,
               ),
               onPressed: () {
-                //go back to mapView
+                Navigator.pop(context);
               },
 //              shape: RoundedRectangleBorder(
 //                  borderRadius: BorderRadius.all(Radius.circular(12.0))),
