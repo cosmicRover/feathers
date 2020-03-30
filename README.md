@@ -11,7 +11,7 @@ A cross platform mobile application that allows smartphone users to identify, tr
  powered by: Google Cloud Platform (https://cloud.google.com/) :cloud:
 
 ##### :heavy_check_mark: Users can upload a picture of a bird to identify its species 
- powered by:  Amazon Web Services Sagemaker ML Platform (https://aws.amazon.com/) :robot:
+ powered by:  Amazon Web Services Sagemaker ML Platform (https://aws.amazon.com/sagemaker/) :robot:
 
 ##### :heavy_check_mark: Users can learn more about birds and find useful information about protecting vulnerable species
  powered by: Feathers API - hosted on heroku(https://tranquil-atoll-40168.herokuapp.com/bird/blue_jay) :hammer: 
