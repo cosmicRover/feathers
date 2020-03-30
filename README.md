@@ -27,6 +27,10 @@ A cross platform mobile application that allows smartphone users to identify, tr
 
 [Video Walkthrough](https://i.imgur.com/2dq1kGb.gifv)
 
+# PITCH 
+
+[![Feathers](https://res.cloudinary.com/marcomontalbano/image/upload/v1585569214/video_to_markdown/images/youtube--uzKxRSHxWtI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=uzKxRSHxWtI&feature=emb_err_watch_on_yt "Feathers")
+
 
 
 
