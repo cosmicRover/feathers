@@ -23,7 +23,9 @@ class MyApp extends StatelessWidget {
         canvasColor: Colors.transparent,
         fontFamily: 'Gibson'
       ),
-      home: detailsView(),
+
+      home: LoginView(),
+
     );
   }
 }

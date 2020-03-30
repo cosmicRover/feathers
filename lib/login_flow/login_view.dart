@@ -1,4 +1,6 @@
 import 'package:feathers/login_flow/login_model.dart';
+import 'package:feathers/map_flow/map_view.dart';
+import 'package:feathers/services/auth_service.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 
@@ -57,9 +59,13 @@ class LoginView extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
               child: GestureDetector(
-                child: flrButton(),
-                onTap: () => _viewModel.initLoginFlow,
-              ),
+                  child: flrButton(),
+                  onTap: () {
+                    AuthServices().signInUser.then((value) {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => MapView()));
+                    });
+                  }),
             ),
           ),
         ],
@@ -72,14 +78,18 @@ class LoginView extends StatelessWidget {
       height: 130.0,
       child: Stack(
         children: <Widget>[
-          
           FlareActor(
             "assets/login_assets/play.flr",
             fit: BoxFit.contain,
             animation: "stand_by",
             color: Color.fromRGBO(18, 44, 147, 1),
           ),
-          Center(child: Text("Begin", style: TextStyle(color: Colors.white),),),
+          Center(
+            child: Text(
+              "Begin",
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
         ],
       ),
     );
