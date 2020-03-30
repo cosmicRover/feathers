@@ -52,6 +52,7 @@ flutter:
     - assets/login_assets/bird.gif
     - assets/cameraView_assets/play.flr
     - assets/cameraView_assets/cameraBack.png
+    - assets/cameraView_assets/blue.jpg
 #    - assets/login_assets/button_border.png
 #    - assets/login_assets/Breathing_button.gif
 #    - assets/login_assets/flower_gif.gif
