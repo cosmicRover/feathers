@@ -49,6 +49,12 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Require permission to access Photos to upload images and classify bird species</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Require permission to access Photos to upload images and classify bird species</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Require permission to access Photos to upload images and classify bird species</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
