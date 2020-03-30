@@ -17,7 +17,7 @@ A cross platform mobile application that allows smartphone users to identify, tr
  powered by: Feathers API - hosted on heroku(https://tranquil-atoll-40168.herokuapp.com/bird/blue_jay) :hammer: 
 
 ##### :heavy_check_mark: Users can view a timeline of all the bird species they have identified on their profile
- App powered by: Flutter (:zap:)
+ App powered by: Flutter (https://flutter.dev) (:zap:)
 
 ##### UI
 ![UI](https://drive.google.com/file/d/1V1Ger93KsQiLsoM667SfSFDN2M_v4WIG/view?usp=sharing)
