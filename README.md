@@ -22,8 +22,10 @@ A cross platform mobile application that allows smartphone users to identify, tr
 ##### UI
 ![UI](https://drive.google.com/file/d/1V1Ger93KsQiLsoM667SfSFDN2M_v4WIG/view?usp=sharing)
 
+
 ##### DEMO
-<img src = "https://imgur.com/a/vNTZMhP" >
+<img src='https://imgur.com/a/vNTZMhP' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 
 
