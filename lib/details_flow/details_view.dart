@@ -235,7 +235,7 @@ class _detailsViewState extends State<detailsView> {
                 color: _colors.menuBlue,
               ),
               onPressed: () {
-                // _showNavMenu(context);
+                Navigator.pop(context);
               },
 //              shape: RoundedRectangleBorder(
 //                  borderRadius: BorderRadius.all(Radius.circular(12.0))),

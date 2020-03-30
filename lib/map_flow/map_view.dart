@@ -2,6 +2,7 @@ import 'package:feathers/app_constants/app_colors.dart';
 import 'package:feathers/camera_flow/camera_view.dart';
 import 'package:feathers/map_flow/map_view_model.dart';
 import 'package:feathers/profile_flow/profile_view.dart';
+import 'package:feathers/protection_flow/protection_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'dart:async';
@@ -175,22 +176,30 @@ class _MapViewState extends State<MapView> {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 17.0, left: 39.0),
-                          child: Row(
-                            children: <Widget>[
-                              Image.asset(
-                                "assets/mapview_assets/wing.png",
-                                height: 20.0,
-                                width: 20.0,
-                              ),
-                              SizedBox(
-                                width: 12.0,
-                              ),
-                              Text(
-                                "Protect the Birds",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 18.0),
-                              )
-                            ],
+                          child: GestureDetector(
+                            onTap: (){
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ProtectionView()));
+                            },
+                            child: Row(
+                              children: <Widget>[
+                                Image.asset(
+                                  "assets/mapview_assets/wing.png",
+                                  height: 20.0,
+                                  width: 20.0,
+                                ),
+                                SizedBox(
+                                  width: 12.0,
+                                ),
+                                Text(
+                                  "Protect the Birds",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 18.0),
+                                )
+                              ],
+                            ),
                           ),
                         )
                       ],

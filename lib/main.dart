@@ -3,6 +3,7 @@ import 'package:feathers/details_flow/details_view.dart';
 import 'package:feathers/login_flow/login_view.dart';
 import 'package:feathers/map_flow/map_view.dart';
 import 'package:feathers/profile_flow/profile_view.dart';
+import 'package:feathers/protection_flow/protection_view.dart';
 import 'package:flutter/material.dart';
 
 import 'camera_flow/camera_view.dart';

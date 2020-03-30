@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:feathers/details_flow/details_view.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:feathers/camera_flow/camera_view.dart';
@@ -49,8 +50,10 @@ class cameraDialog extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 8.0),
               child: GestureDetector(
                 child: flrButton(),
-                onTap: () =>  {Navigator.of(context).pop(),
-                  Navigator.of(context).pushReplacementNamed(buttonRoute)}
+                onTap: () {
+                  Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => detailsView()));
+                }
               ),
             ),
           ),

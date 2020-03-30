@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:feathers/app_constants/app_colors.dart';
+import 'package:feathers/details_flow/details_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:image_picker/image_picker.dart';
@@ -23,9 +24,12 @@ class _cameraViewState extends State<cameraView> {
       showDialog(
           context: context,
           builder: (BuildContext context) => cameraDialog(
+            
               title: "Blue Jay",
               buttonText: "Learn More",
-              selectedImage: AssetImage('assets/cameraView_assets/blue.jpg')));
+
+              selectedImage: AssetImage('assets/cameraView_assets/blue.jpg')
+               ));
       print('_image: $_image');
     });
   }
@@ -43,6 +47,7 @@ class _cameraViewState extends State<cameraView> {
                         AssetImage('assets/cameraView_assets/cameraBack.png'),
                     fit: BoxFit.fill)),
           ),
+          Center(child: Text("Upload a picture of a bird", style: TextStyle(fontFamily: 'Gibson', color: Colors.white, fontSize: 25))),
           Align(
             alignment: Alignment(0, 0.35),
             child: Padding(

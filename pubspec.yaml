@@ -65,6 +65,7 @@ flutter:
     - assets/mapview_assets/pin5.png
     - assets/detailsView_assets/jay.png
     - assets/detailsView_assets/FullBackground.png
+    - assets/protectionView_assets/Background.png
 
 #    - assets/login_assets/button_border.png
 #    - assets/login_assets/Breathing_button.gif
