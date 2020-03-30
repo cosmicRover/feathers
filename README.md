@@ -23,7 +23,7 @@ A cross platform mobile application that allows smartphone users to identify, tr
 [UI](https://imgur.com/7UVJOER)
 
 
-#DEMO
+# DEMO
 
 [Video Walkthrough](https://i.imgur.com/2dq1kGb.gifv)
 
