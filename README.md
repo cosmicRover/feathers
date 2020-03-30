@@ -20,11 +20,12 @@ A cross platform mobile application that allows smartphone users to identify, tr
  App powered by: Flutter (https://flutter.dev) (:zap:)
 
 ##### UI
-![UI](https://drive.google.com/file/d/1V1Ger93KsQiLsoM667SfSFDN2M_v4WIG/view?usp=sharing)
+[UI](https://imgur.com/7UVJOER)
 
 
 ##### DEMO
-<vid src='https://imgur.com/a/vNTZMhP' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+[Video Walkthrough](https://i.imgur.com/2dq1kGb.gifv)
 
 
 
