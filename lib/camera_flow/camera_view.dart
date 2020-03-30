@@ -16,23 +16,18 @@ class _cameraViewState extends State<cameraView> {
 
   Future _getImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
-      
-      
-      setState(() {
 
-        _image = image;
-      
+    setState(() {
+      _image = image;
+
       showDialog(
-        context: context,
-        builder: (BuildContext context) => cameraDialog(title: "Blue Jay", buttonText: "Learn More", selectedImage: AssetImage('assets/cameraView_assets/blue.jpg') )
-      );
+          context: context,
+          builder: (BuildContext context) => cameraDialog(
+              title: "Blue Jay",
+              buttonText: "Learn More",
+              selectedImage: AssetImage('assets/cameraView_assets/blue.jpg')));
       print('_image: $_image');
     });
-
-
-
-    
-    
   }
 
   @override
@@ -73,7 +68,7 @@ class _cameraViewState extends State<cameraView> {
                 color: _colors.menuBlue,
               ),
               onPressed: () {
-                print("Hola"); // TO DO: POP NAVIGATION
+                Navigator.pop(context);
               },
             ),
           ),

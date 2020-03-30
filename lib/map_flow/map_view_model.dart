@@ -23,4 +23,36 @@ class MapViewModel {
     return locationService.getLocation();
   }
 
+  List<Marker> birdMarkers = [
+    Marker(
+        markerId: MarkerId('mark1'),
+        draggable: true,
+        position: LatLng(37.3318, -122.0310),
+        icon: BitmapDescriptor.fromAsset("assets/mapview_assets/pin1.png")
+    ),
+    Marker(
+        markerId: MarkerId('mark1'),
+        draggable: true,
+        position: LatLng(37.331, -122.035),
+        icon: BitmapDescriptor.fromAsset("assets/mapview_assets/pin2.png")
+    ),
+    Marker(
+        markerId: MarkerId('mark1'),
+        draggable: true,
+        position: LatLng(37.331, -122.039),
+        icon: BitmapDescriptor.fromAsset("assets/mapview_assets/pin3.png")
+    ),
+    Marker(
+        markerId: MarkerId('mark1'),
+        draggable: true,
+        position: LatLng(37.330, -122.037),
+        icon: BitmapDescriptor.fromAsset("assets/mapview_assets/pin4.png")
+    ),
+    Marker(
+        markerId: MarkerId('mark1'),
+        draggable: true,
+        position: LatLng(37.330, -122.036),
+        icon: BitmapDescriptor.fromAsset("assets/mapview_assets/pin5.png")
+    )
+  ];
 }
